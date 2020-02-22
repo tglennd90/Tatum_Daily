@@ -17,9 +17,13 @@
     <!-- ========================= -->
     <title>Tatum Daily</title>
 
-    <!-- Materialize CDN -->
+    <!-- Bootstrap CDN -->
     <!-- ========================= -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Feather CDN -->
+    <!-- ========================= -->
+    <script src="https://pagecdn.io/lib/feather-icons/4.25.0/feather.js" crossorigin="anonymous"  ></script>
 
     <!-- CSS Stylesheet -->
     <!-- ========================= -->
@@ -33,13 +37,172 @@
 
 <body>
 
-    <!-- Materialize JS/JQ CDN -->
+    <!-- Bootstrap Container -->
     <!-- ========================= -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <div class="container-fluid">
+
+        <!-- Header / Nav Bar -->
+        <!-- ========================= -->
+        <div class="row text-center" id="header">
+            
+            <!-- Empty Space -->
+            <div class="col-2"></div>
+
+            <!-- Nav Bar -->
+            <div class="col-8">
+                <a href="#">Portfolio</a>
+                <a href="#">Skills</a>
+                <a href="#">Bio</a>
+                <a href="#">Contact</a>
+            </div>
+            
+            <!-- Empty Space -->
+            <div class="col-2"></div>
+
+        </div>
+
+        <!-- Logo Area -->
+        <!-- ========================= -->
+        <div class="row" id="logoArea">
+
+            <p>Logo Area</p>
+
+        </div><br>
+
+        <!-- Page Break -->
+        <!-- ========================= -->
+        <div class="row myBreak"></div><br>
+
+        <!-- Portfolio Area -->
+        <!-- ========================= -->
+        <div class="row" id="portfolioArea">
+            
+            <slider class="col-10 portfolioShow">
+                <slide class="portfolioSlide"><p>Slide 1</p></slide>
+                <slide class="portfolioSlide"><p>Slide 2</p></slide>
+                <slide class="portfolioSlide"><p>Slide 3</p></slide>
+                <slide class="portfolioSlide"><p>Slide 4</p></slide>
+                <slide class="portfolioSlide"><p>Slide 5</p></slide>
+                <slide class="portfolioSlide"><p>Slide 6</p></slide>
+            </slider>
+
+        </div><br>
+
+        <!-- Page Break -->
+        <!-- ========================= -->
+        <div class="row myBreak"></div><br>
+
+        <!-- Skills Area -->
+        <!-- ========================= -->
+        <div class="row" id="skillsArea">
+
+            <p>Skills Area</p>
+
+        </div><br>
+
+        <!-- Page Break -->
+        <!-- ========================= -->
+        <div class="row myBreak"></div><br>
+
+        <!-- Bio Area -->
+        <!-- ========================= -->
+        <div class="row" id="bioArea">
+
+            
+            <!-- Family Slideshow -->
+            <!-- ========================= -->
+            <slider class="col-6 familyShow">
+                <slide class="familySlide"></slide>
+                <slide class="familySlide"></slide>
+                <slide class="familySlide"></slide>
+                <slide class="familySlide"></slide>
+                <slide class="familySlide"></slide>
+                <slide class="familySlide"></slide>
+            </slider>
+               
+
+            <!-- Bio -->
+            <!-- ========================= -->
+                
+                <!-- Paragraph #1 -->
+                <!-- ========================= -->
+                <div class="col-3">
+                    <p>
+                        Deserunt consectetur quis consectetur pariatur est aliqua mollit minim do magna sit reprehenderit. Lorem ex non proident nulla aliquip do magna elit irure aute. Magna dolore officia labore ad in exercitation et dolore officia id consequat.
+                    </p>
+                </div>
+
+                <!-- Paragraph #2 -->
+                <!-- ========================= -->
+                <div class="col-3">
+                    <p>
+                        Deserunt consectetur quis consectetur pariatur est aliqua mollit minim do magna sit reprehenderit. Lorem ex non proident nulla aliquip do magna elit irure aute. Magna dolore officia labore ad in exercitation et dolore officia id consequat.
+                    </p>
+                </div>
+
+        </div><br>
+
+        <!-- Page Break -->
+        <!-- ========================= -->
+        <div class="row myBreak"></div><br>
+
+        <!-- Contact Area -->
+        <!-- ========================= -->
+        <div class="row" id="contactArea">
+
+            <!-- Contact Form -->
+            <!-- ========================= -->
+            <form class="col-6" id="contactForm">
+                <br>
+                <div class="form-row">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="First Name:">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Last Name:">
+                    </div>
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="col-6">
+                        <input type="email" class="form-control" placeholder="Email:">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Subject:">
+                    </div>
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="col-12">
+                        <textarea class="form-control" placeholder="Content:" rows="8"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="form-row text-center">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <input class="btn btn-danger" type="button" value="Contact Me!">
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <br>
+            </form>
+
+        </div><br>
+
+    <!-- END == Bootstrap Container == END -->
+    <!-- ========================= -->
+    </div>
 
     <!-- JavaScript Link -->
     <!-- ========================= -->
     <script src="assets/javascript/main.js"></script>
+
+    <!-- Bootstrap JS/JQ CDN -->
+    <!-- ========================= -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 
