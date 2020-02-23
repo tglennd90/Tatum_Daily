@@ -60,59 +60,21 @@ body {
 
 .portfolioSlide {
     width: 100%;
-    height: 80%;
+    height: 85%;
     overflow: hidden;
     display: block;
-}
-
-.portfolioSlide:nth-child(1) {
-    
-    background-color: turquoise;
-    background-size: cover;
-    background-position: center;
-}
-
-.portfolioSlide:nth-child(2) {
-    
-    background-color: violet;
-    background-size: cover;
-    background-position: center;
-}
-
-.portfolioSlide:nth-child(3) {
-    
-    background-color: navajowhite;
-    background-size: cover;
-    background-position: center;
-}
-
-.portfolioSlide:nth-child(4) {
-    
-    background-color: grey;
-    background-size: cover;
-    background-position: center;
-}
-
-.portfolioSlide:nth-child(5) {
-    
-    background-color: lightseagreen;
-    background-size: cover;
-    background-position: center;
-}
-
-.portfolioSlide:nth-child(6) {
-    
-    background-color: deeppink;
     background-size: cover;
     background-position: center;
 }
 
 .portfolioSlide p {
     font-size: 50px;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    color: orangered;
+    position: absolute;
+    bottom: 15%;
+    font-family: 'Charm';
+    right: 5%;
+    width: fit-content;
+    color: whitesmoke;
 }
 
 /* Skills Area */
