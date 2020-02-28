@@ -21,6 +21,10 @@
     <!-- ========================= -->
     <link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <!-- ========================= -->
+    <script src="https://kit.fontawesome.com/0570c2f73b.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CDN -->
     <!-- ========================= -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -82,18 +86,91 @@
         <a name="portLink"></a>
         <div class="row" id="portfolioArea">
             
-            <slider class="col-10 portfolioShow">
-                <a href="https://tglennd90.github.io/PsychicGame/" target="_blank"><slide class="portfolioSlide" style="background-image: url(assets/images/psychic.jpg);"><p>Psychic Game</p></slide></a>
-                <a href="https://tglennd90.github.io/Unit-4-Game/" target="_blank"><slide class="portfolioSlide" style="background-image: url(assets/images/cave.jpg);"><p>Crystal Collector</p></slide></a>
-                <a href="https://tglennd90.github.io/TriviaGame/" target="_blank"><slide class="portfolioSlide" style="background-image: url(assets/images/trivia.jpg);"><p>Trivia Game</p></slide></a>
-                <a href="https://tglennd90.github.io/AjaxHomework/" target="_blank"><slide class="portfolioSlide" style="background-image: url(assets/images/meme.jpg);"><p>GIPHY</p></slide></a>
-                <a href="https://tglennd90.github.io/FireTrain/" target="_blank"><slide class="portfolioSlide" style="background-image: url(assets/images/train.jpg);"><p>Train Scheduler</p></slide></a>
-                <a href="https://lee4n.github.io/Project-1/" target="_blank"><slide class="portfolioSlide" style="background-image: url(assets/images/money.jpg);"><p>Project #1</p></slide></a>
-                <a href="https://github.com/tglennd90/LIRI-Node-App" target="_blank"><slide class="portfolioSlide" style="background-image: url(assets/images/node.jpg);"><p>LIRI</p></slide></a>
-            </slider>
+            <!-- Portfolio Slideshow -->
+            <!-- ========================= -->
+            <div class="col-8 portfolioShowWrapper">
+                <div class="portfolioShow">
+                    <div class="portfolioSlide psychic">
+                        <div class="gitBtn">
+                            <a href="https://github.com/tglennd90/PsychicGame" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        </div>
+                        <div class="infoBtn" id="infoBtnPsychic">
+                            <a href="#"><i class="fas fa-exclamation-circle fa-3x"></i></a>
+                        </div>
+                        <div class="webBtn">
+                            <a href="https://tglennd90.github.io/PsychicGame/" target="_blank"><i class="fab fa-chrome fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolioSlide cave">
+                        <div class="gitBtn">
+                            <a href="https://github.com/tglennd90/Unit-4-Game" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        </div>
+                        <div class="infoBtn" id="infoBtnCave">
+                            <a href="#"><i class="fas fa-exclamation-circle fa-3x"></i></a>
+                        </div>
+                        <div class="webBtn">
+                            <a href="https://tglennd90.github.io/Unit-4-Game/" target="_blank"><i class="fab fa-chrome fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolioSlide node">
+                        <div class="gitBtn">
+                            <a href="https://github.com/tglennd90/LIRI-Node-App" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        </div>
+                        <div class="infoBtn" id="infoBtnNode">
+                            <a href="#"><i class="fas fa-exclamation-circle fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolioSlide meme">
+                        <div class="gitBtn">
+                            <a href="https://github.com/tglennd90/AjaxHomework" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        </div>
+                        <div class="infoBtn" id="infoBtnMeme">
+                            <a href="#"><i class="fas fa-exclamation-circle fa-3x"></i></a>
+                        </div>
+                        <div class="webBtn">
+                            <a href="https://tglennd90.github.io/AjaxHomework/" target="_blank"><i class="fab fa-chrome fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolioSlide train">
+                        <div class="gitBtn">
+                            <a href="https://github.com/tglennd90/FireTrain" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        </div>
+                        <div class="infoBtn" id="infoBtnFireTrain">
+                            <a href="#"><i class="fas fa-exclamation-circle fa-3x"></i></a>
+                        </div>
+                        <div class="webBtn">
+                            <a href="https://tglennd90.github.io/FireTrain/" target="_blank"><i class="fab fa-chrome fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolioSlide money">
+                        <div class="gitBtn">
+                            <a href="https://github.com/tglennd90/Project-1" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        </div>
+                        <div class="infoBtn" id="infoBtnMoney">
+                            <a href="#"><i class="fas fa-exclamation-circle fa-3x"></i></a>
+                        </div>
+                        <div class="webBtn">
+                            <a href="https://lee4n.github.io/Project-1/" target="_blank"><i class="fab fa-chrome fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </div><br>
+            <!-- Portfolio Info-Display Area -->
+            <!-- ========================= -->
+            <div class="col-4 infoArea">
+                <div class="projectTitle">Title</div>
+                <div class="projectTech">
+                    <ul class="techUl">
+                        <li>Tech</li>
+                        <li>Tech</li>
+                        <li>Tech</li>
+                        <li>Tech</li>
+                    </ul>
+                </div>
+            </div>
 
+        </div>
         <!-- Page Break -->
         <!-- ========================= -->
         <div class="row myBreak"></div><br>
